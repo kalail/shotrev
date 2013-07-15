@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.define :web do |web|
     web.vm.synced_folder "salt/roots/", "/srv/"
     web.vm.synced_folder "shotrev/", "/home/vagrant/shotrev/"
-    web.vm.network :forwarded_port, host: 8000, guest: 8000
+    web.vm.network :forwarded_port, host: 8000, guest: 80
     
     web.vm.provision :salt do |salt|
       salt.minion_config = "salt/minion.conf"
