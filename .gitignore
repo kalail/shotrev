@@ -1,4 +1,4 @@
 *.py[co]
 .vagrant
-.db
-fabfile
+*.db
+fabfile.py
