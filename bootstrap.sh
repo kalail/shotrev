@@ -5,9 +5,6 @@ echo -e 'password\npassword\n' | passwd
 echo -e 'password\npassword\n' | passwd vagrant
 # Install python utilities
 apt-get install -y build-essential python-dev python-setuptools python-pip
-# Dependencies for image processing with PIL
-apt-get install -y libjpeg62-dev zlib1g-dev libfreetype6-dev liblcms1-dev
-# sudo apt-get install -y postgresql libpq-dev
 # Set up postgres
 # passwd postgres
 

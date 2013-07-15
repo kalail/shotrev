@@ -1,5 +1,4 @@
 base:
     '*':
-        - essential
-        - ssh
-        - users
+        - requirements
+        - app
